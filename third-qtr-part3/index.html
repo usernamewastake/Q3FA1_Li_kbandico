@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nickname = "Kyle";
+        var height = 61;
+        var heightFoot = Math.floor(61/12);
+        var heightInch = 61%12;
+        var weight = 50
+        var txt;
+        if (confirm("Do you agree to share your personal information with this site?")) {
+            txt = "Name: " + nickname + "\nHeight: " + heightFoot + "'" + heightInch + '"\nWeight: ' + weight*2.20462;
+        } else {
+            txt = "User does not wish to share his/her information."
+        }
+        console.log(txt);
+    </script>
+</body>
+</html>
